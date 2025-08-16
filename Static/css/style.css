@@ -1,0 +1,199 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat-VariableFont_wght.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Sevilana';
+    src: url(../fonts/Sevillana-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'DMSans';
+    src: url(../fonts/DMSans-VariableFont_opsz\,wght.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Caprasimo';
+    src: url(../fonts/Caprasimo-Regular.ttf);
+}
+body{
+    background-color: #ebf8ff;
+}
+.main-header {
+    background-image: url("../asserts/cell_bg.jpg");
+    padding: 10px;
+    text-align: center;
+    border-bottom: 2px solid #007bff;
+    text-shadow: 1px 1px 4px #e2f72d; 
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.header-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.header-subtitle {
+    font-size: 18px;
+    color: #f9fcff;
+    margin: 0;
+}
+marquee{
+    color:sienna;
+}
+
+h2{
+    font-family: 'Caprasimo',sans-serif;
+    text-align: center;
+    color: #007bff;
+}
+h3{
+    font-family: 'DMSans',sans-serif;
+    font-weight: bolder;
+    color: #9318f8;
+    text-decoration:underline;
+    text-shadow: 0 2px 6px #2f94ff;
+}
+h4{
+    font-weight: bolder;
+    color: #9318f8;
+    font-family: 'Montserrat',sans-serif;
+}
+p{
+    font-family:'Montserrat',sans-serif;
+    color: #2c3e50;
+}
+.img{
+    width: 100%;
+    /*background-color: #1e293b; */
+    border-radius: 35px;
+}
+#cell-img{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;         
+    overflow-x: auto;         
+    gap: 30px;
+    padding: 40px 20px;
+    scroll-behavior: smooth;
+    height: 250px;
+    margin: 20px auto;
+
+}
+
+#cell{
+    border-radius: 15px;
+    border-image: fill;
+    box-shadow: 2px 0 10px black;
+
+}
+#cell:hover{
+    transform: rotate(20deg)scale(1.03)translate(20px);
+}
+.result_img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+}
+.result_image{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;         
+    overflow-x: auto;         
+    padding: 40px 20px;
+    height: 250px;
+    margin: auto 200px ;
+
+}
+#result_image{
+    transform: scale(1.2)translate(20deg);
+}
+#result_cell{
+    border-radius: 15px;
+    border-image: fill;
+    box-shadow: 0 0 10px black;
+    transition: transform 0.4s
+}
+label{
+    font-weight:900;
+    color: coral;
+    font-family: 'Sevilana',sans-serif;
+}
+.form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+}
+input[type="file"] {
+    margin-bottom: 20px;
+    background-color: #9f48e6;
+    padding: 10px;
+    color: #c5ebff;
+    transition: transform 0.4s;
+    cursor: pointer;
+}
+input:hover{
+    transform: translate(20px);
+}
+button {
+    background-color: #9318f8;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bolder;
+    transition: transform 0.4s ;
+}
+button:hover{
+    background-color: rgb(215, 15, 255);
+    color: rgb(0, 0, 0);
+    transition: 0.3s ease-in-out;
+    transition: transform 0.3s ;
+    transform: scale(1.08)translate(20px);
+}
+
+footer {
+    background: linear-gradient(to right,#cbfce1,#d988ee,#cbfce1);
+    color: #000000;
+    padding: 30px 20px 10px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 100%;
+    margin: auto;
+}
+  .footer-left, .footer-center, .footer-right {
+    flex: 1;
+    min-width: 250px;
+}
+.social-icons img {
+    width: 28px;
+    height: 28px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+.social-icons img:hover {
+    transform: scale(1.2);
+    box-shadow: 0 2px 10px rgb(0, 0, 0);
+}
+.footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+    font-size: 14px;
+}
